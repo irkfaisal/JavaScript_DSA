@@ -15,7 +15,7 @@ function insertElement() {
 
 }
 
-// adding new element by for loop
+// // adding new element by for loop
 let arr = [9, 5, 2, 8, 4, 1, 10];
 let newElem1 = 0;
 let position1 = 4;
@@ -28,3 +28,8 @@ for (let i = arr.length - 1; i >= 0; i--) {
     }
 }
 console.log(arr);
+
+// by array methods 
+let arr2 = [9, 5, 2, 8, 4, 1, 10];
+console.log(arr2.splice(4,0,0));
+

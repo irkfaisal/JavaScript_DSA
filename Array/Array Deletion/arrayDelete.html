@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="arrayDelete.js"></script>
+    <title>Array deletion in Data structure</title>
+</head>
+
+<body>
+    <h1>Array deletion in Data structure</h1>
+    <input type="text" id="positionElement" placeholder="Delete Element">
+    <button onclick="deleteElement()">Delet</button>
+
+</body>
+<script>
+    function deleteElement() {
+        let array = [10, 45, 25, 15, 85, 30, 22];
+        let position = parseInt(document.getElementById("positionElement").value);
+        for (let i = position; i < array.length - 1; i++) {
+            array[i] = array[i + 1]
+        }
+        array.length = array.length - 1;
+        console.log(array);
+    }
+
+</script>
+
+</html>
